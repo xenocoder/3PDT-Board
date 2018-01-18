@@ -401,15 +401,15 @@
 </classes>
 <parts>
 <part name="SW1" library="mb_switches" deviceset="3PDT" device="BLUE"/>
-<part name="GND1" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="GND2" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="IN1" library="mb_supply" deviceset="IN(T)" device=""/>
-<part name="OUT1" library="mb_supply" deviceset="OUT(T)" device=""/>
+<part name="G" library="mb_supply" deviceset="GND(T)" device=""/>
+<part name="JOG" library="mb_supply" deviceset="GND(T)" device=""/>
+<part name="IN" library="mb_supply" deviceset="IN(T)" device=""/>
+<part name="OUT" library="mb_supply" deviceset="OUT(T)" device=""/>
 <part name="JOUT" library="mb_supply" deviceset="PAD" device=""/>
 <part name="JIN" library="mb_supply" deviceset="PAD" device=""/>
-<part name="+9V1" library="mb_supply" deviceset="+9V(T)" device=""/>
+<part name="+9V" library="mb_supply" deviceset="+9V(T)" device=""/>
 <part name="LED" library="mb_supply" deviceset="PAD" device=""/>
-<part name="GND3" library="mb_supply" deviceset="GND(T)" device=""/>
+<part name="JIG" library="mb_supply" deviceset="GND(T)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -419,15 +419,15 @@
 <instance part="SW1" gate="A" x="12.7" y="27.94"/>
 <instance part="SW1" gate="B" x="25.4" y="27.94"/>
 <instance part="SW1" gate="C" x="38.1" y="27.94"/>
-<instance part="GND1" gate="GND" x="25.4" y="12.7"/>
-<instance part="GND2" gate="GND" x="99.06" y="35.56"/>
-<instance part="IN1" gate="G$1" x="12.7" y="12.7" rot="R90"/>
-<instance part="OUT1" gate="G$1" x="40.64" y="38.1" rot="R90"/>
+<instance part="G" gate="GND" x="25.4" y="12.7"/>
+<instance part="JOG" gate="GND" x="99.06" y="35.56"/>
+<instance part="IN" gate="G$1" x="12.7" y="12.7" rot="R90"/>
+<instance part="OUT" gate="G$1" x="40.64" y="38.1" rot="R90"/>
 <instance part="JOUT" gate="G$1" x="38.1" y="12.7" rot="R270"/>
 <instance part="JIN" gate="G$1" x="15.24" y="38.1" rot="R90"/>
-<instance part="+9V1" gate="+9V" x="116.84" y="78.74" rot="R180"/>
+<instance part="+9V" gate="+9V" x="116.84" y="78.74" rot="R180"/>
 <instance part="LED" gate="G$1" x="27.94" y="38.1" rot="R90"/>
-<instance part="GND3" gate="GND" x="63.5" y="35.56"/>
+<instance part="JIG" gate="GND" x="63.5" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -442,14 +442,14 @@
 <net name="GND" class="0">
 <segment>
 <pinref part="SW1" gate="B" pin="2"/>
-<pinref part="GND1" gate="GND" pin="GND"/>
+<pinref part="G" gate="GND" pin="GND"/>
 <wire x1="25.4" y1="22.86" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN" class="0">
 <segment>
 <pinref part="SW1" gate="A" pin="2"/>
-<pinref part="IN1" gate="G$1" pin="IN"/>
+<pinref part="IN" gate="G$1" pin="IN"/>
 <wire x1="12.7" y1="22.86" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -485,7 +485,7 @@
 </net>
 <net name="OUT" class="0">
 <segment>
-<pinref part="OUT1" gate="G$1" pin="OUT"/>
+<pinref part="OUT" gate="G$1" pin="OUT"/>
 <pinref part="SW1" gate="C" pin="3"/>
 <wire x1="40.64" y1="35.56" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
 </segment>

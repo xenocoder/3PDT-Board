@@ -422,7 +422,7 @@
 <instance part="GND1" gate="GND" x="25.4" y="12.7"/>
 <instance part="GND2" gate="GND" x="99.06" y="35.56"/>
 <instance part="IN1" gate="G$1" x="12.7" y="12.7" rot="R90"/>
-<instance part="OUT1" gate="G$1" x="101.6" y="45.72"/>
+<instance part="OUT1" gate="G$1" x="40.64" y="38.1" rot="R90"/>
 <instance part="JOUT" gate="G$1" x="38.1" y="12.7" rot="R270"/>
 <instance part="JIN" gate="G$1" x="15.24" y="38.1" rot="R90"/>
 <instance part="+9V1" gate="+9V" x="116.84" y="78.74" rot="R180"/>
@@ -474,6 +474,13 @@
 <pinref part="JIN" gate="G$1" pin="PAD"/>
 <pinref part="SW1" gate="A" pin="3"/>
 <wire x1="15.24" y1="35.56" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OUT" class="0">
+<segment>
+<pinref part="OUT1" gate="G$1" pin="OUT"/>
+<pinref part="SW1" gate="C" pin="3"/>
+<wire x1="40.64" y1="35.56" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

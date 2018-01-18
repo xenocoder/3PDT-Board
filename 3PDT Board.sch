@@ -417,14 +417,14 @@
 </plain>
 <instances>
 <instance part="G" gate="GND" x="25.4" y="12.7"/>
-<instance part="JOG" gate="GND" x="99.06" y="35.56"/>
+<instance part="JOG" gate="GND" x="20.32" y="15.24"/>
 <instance part="IN" gate="G$1" x="12.7" y="12.7" rot="R90"/>
 <instance part="OUT" gate="G$1" x="40.64" y="38.1" rot="R90"/>
 <instance part="JOUT" gate="G$1" x="38.1" y="12.7" rot="R270"/>
 <instance part="JIN" gate="G$1" x="15.24" y="38.1" rot="R90"/>
-<instance part="+9V" gate="+9V" x="116.84" y="78.74" rot="R180"/>
+<instance part="+9V" gate="+9V" x="33.02" y="45.72"/>
 <instance part="LED" gate="G$1" x="27.94" y="38.1" rot="R90"/>
-<instance part="JIG" gate="GND" x="63.5" y="35.56"/>
+<instance part="JIG" gate="GND" x="27.94" y="15.24"/>
 <instance part="SW2" gate="A" x="12.7" y="27.94"/>
 <instance part="SW2" gate="B" x="25.4" y="27.94"/>
 <instance part="SW2" gate="C" x="38.1" y="27.94"/>
@@ -442,8 +442,14 @@
 <net name="GND" class="0">
 <segment>
 <pinref part="G" gate="GND" pin="GND"/>
-<wire x1="25.4" y1="22.86" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="22.86" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="SW2" gate="B" pin="2"/>
+<pinref part="JOG" gate="GND" pin="GND"/>
+<wire x1="25.4" y1="17.78" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="17.78" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
+<junction x="25.4" y="17.78"/>
+<pinref part="JIG" gate="GND" pin="GND"/>
+<wire x1="27.94" y1="17.78" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN" class="0">

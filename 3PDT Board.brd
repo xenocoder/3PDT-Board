@@ -363,6 +363,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="24.003" y="22.225"/>
 </polygon>
 <contactref element="SW2" pad="B2"/>
+<contactref element="JOG" pad="1"/>
+<contactref element="JIG" pad="1"/>
 </signal>
 <signal name="IN">
 <contactref element="IN" pad="1"/>

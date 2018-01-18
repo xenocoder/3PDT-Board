@@ -474,6 +474,13 @@
 <pinref part="JIN" gate="G$1" pin="PAD"/>
 <pinref part="SW1" gate="A" pin="3"/>
 <wire x1="15.24" y1="35.56" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="C" pin="1"/>
+<wire x1="35.56" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="33.02" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="7.62" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<junction x="15.24" y="33.02"/>
 </segment>
 </net>
 <net name="OUT" class="0">

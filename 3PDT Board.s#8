@@ -450,7 +450,14 @@
 <segment>
 <pinref part="SW1" gate="A" pin="2"/>
 <pinref part="IN1" gate="G$1" pin="IN"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="C" pin="1"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="33.02" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="48.26" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
+<junction x="12.7" y="17.78"/>
 </segment>
 </net>
 <net name="N$2" class="0">
