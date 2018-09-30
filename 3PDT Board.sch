@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -223,16 +223,6 @@
 <text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="IN">
-<circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="0" y="5.08" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="IN" x="2.54" y="0" visible="off" length="short" direction="sup" rot="R180"/>
-</symbol>
-<symbol name="OUT">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<pin name="OUT" x="-2.54" y="0" visible="off" length="short" direction="sup"/>
-</symbol>
 <symbol name="PAD">
 <wire x1="0" y1="1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
@@ -264,50 +254,6 @@
 <device name="" package="SQUARE">
 <connects>
 <connect gate="GND" pin="GND" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="IN(T)" prefix="IN">
-<description>&lt;b&gt;Input&lt;/b&gt;
-
-&lt;ul&gt;
-&lt;li&gt;obsolete:  use Pad instead and label net
-&lt;li&gt;shematic input label with circuit board terminal/pad&lt;/li&gt;
-&lt;li&gt;generally used only once on a schematic (because this device labels the net "IN" in the same way as a voltage supply or ground net)
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="IN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SQUARE">
-<connects>
-<connect gate="G$1" pin="IN" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OUT(T)" prefix="OUT">
-<description>&lt;b&gt;Output&lt;/b&gt;
-
-&lt;ul&gt;
-&lt;li&gt;obsolete:  use Pad instead and label net
-&lt;li&gt;output label with circuit board terminal/pad&lt;/li&gt;
-&lt;li&gt;usually appears only once on a schematic&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="OUT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SQUARE">
-<connects>
-<connect gate="G$1" pin="OUT" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -390,6 +336,201 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="xc_library">
+<packages>
+<package name="BOARDLINK">
+<wire x1="-3.556" y1="-1.016" x2="-3.556" y2="2.921" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.556" y1="2.921" x2="8.636" y2="2.921" width="0.127" layer="21" style="shortdash"/>
+<wire x1="8.636" y1="2.921" x2="8.636" y2="-1.016" width="0.127" layer="21" style="shortdash"/>
+<wire x1="8.636" y1="-1.016" x2="-3.556" y2="-1.016" width="0.127" layer="21" style="shortdash"/>
+<pad name="3" x="2.54" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="2" x="0" y="0" drill="1" diameter="2"/>
+<pad name="1" x="-2.54" y="0" drill="1" diameter="2" shape="octagon"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+<pad name="4" x="5.08" y="0" drill="1" diameter="2"/>
+<pad name="5" x="7.62" y="0" drill="1" diameter="2" shape="octagon"/>
+<text x="-2.794" y="1.397" size="1.27" layer="21">I</text>
+<text x="-0.508" y="1.397" size="1.27" layer="21">L</text>
+<text x="2.032" y="1.397" size="1.27" layer="21">9</text>
+<text x="4.445" y="1.397" size="1.27" layer="21">G</text>
+<text x="6.985" y="1.397" size="1.27" layer="21">O</text>
+</package>
+</packages>
+<symbols>
+<symbol name="BOARDLINK">
+<description>Part to connect mother and daughterboards</description>
+<wire x1="0" y1="1.016" x2="10.16" y2="1.016" width="0.254" layer="94"/>
+<wire x1="10.16" y1="1.016" x2="10.16" y2="3.048" width="0.254" layer="94"/>
+<wire x1="10.16" y1="3.048" x2="0" y2="3.048" width="0.254" layer="94"/>
+<wire x1="0" y1="3.048" x2="0" y2="1.016" width="0.254" layer="94"/>
+<pin name="IN" x="0" y="-4.064" length="middle" rot="R90"/>
+<pin name="OUT" x="10.16" y="-4.064" length="middle" rot="R90"/>
+<pin name="+9V" x="5.08" y="-4.064" length="middle" rot="R90"/>
+<pin name="LED" x="2.54" y="-4.064" length="middle" rot="R90"/>
+<pin name="G" x="7.62" y="-4.064" length="middle" rot="R90"/>
+<text x="-1.016" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.762" y="-8.128" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BOARDLINK">
+<gates>
+<gate name="G$1" symbol="BOARDLINK" x="-10.16" y="-20.32"/>
+</gates>
+<devices>
+<device name="" package="BOARDLINK">
+<connects>
+<connect gate="G$1" pin="+9V" pad="3"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="LED" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="mb_diodes">
+<description>&lt;b&gt;Diodes&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Zener 1N47xx (as in protection for the MOSFET in the AMZ MOSFET Booster)
+&lt;li&gt;rectifier 1N4001-1N4008 (for polarity reversal protection in power supply sections)
+&lt;li&gt;clipping 1N914 (as in a TS808)
+&lt;li&gt;LED (light emitting diode, 3mm and 5mm)
+&lt;li&gt;mostly gathered from Eagle libraries
+&lt;/ul&gt;</description>
+<packages>
+<package name="DO41-4">
+<description>&lt;b&gt;DO-41 0.4" pad spacing&lt;/b&gt;</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0" x2="4.064" y2="0" width="0.762" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.064" y2="0" width="0.762" layer="51"/>
+<pad name="A" x="5.08" y="0" drill="1" diameter="2"/>
+<pad name="C" x="-5.08" y="0" drill="1" diameter="2" shape="square"/>
+<text x="-1.0922" y="-0.635" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="-2.032" y="-2.794" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
+<rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+</package>
+<package name="DO41-2">
+<description>&lt;b&gt;DO-41 0.2" pad spacing&lt;/b&gt;</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.413" y2="0" width="0.762" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-2.413" y2="0" width="0.762" layer="51"/>
+<pad name="C" x="-2.54" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="A" x="2.54" y="0" drill="1" diameter="2"/>
+<text x="-1.0922" y="-0.635" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="-1.905" y="-2.794" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
+</package>
+<package name="DO41-3">
+<description>&lt;b&gt;DO-41 0.3" pad spacing&lt;/b&gt;</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0" x2="2.413" y2="0" width="0.762" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.762" layer="51"/>
+<pad name="C" x="-3.81" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="A" x="3.81" y="0" drill="1" diameter="2"/>
+<text x="-1.0922" y="-0.635" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="-1.905" y="-2.794" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
+</package>
+<package name="DO41-1">
+<description>&lt;b&gt;DO-41 0.1" pad spacing, vertical&lt;/b&gt;</description>
+<wire x1="1.27" y1="0" x2="-1.143" y2="0" width="0.762" layer="51"/>
+<wire x1="-2.4892" y1="0.7874" x2="-2.4892" y2="-0.7874" width="0.3048" layer="21"/>
+<wire x1="-0.0254" y1="0.254" x2="0.2794" y2="0.254" width="0.127" layer="21"/>
+<wire x1="-0.0254" y1="-0.254" x2="0.2794" y2="-0.254" width="0.127" layer="21"/>
+<circle x="-1.4224" y="0" radius="1.4199" width="0.127" layer="21"/>
+<circle x="1.27" y="0" radius="1.0239" width="0.127" layer="21"/>
+<pad name="C" x="-1.27" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="A" x="1.27" y="0" drill="1" diameter="2"/>
+<text x="-1.397" y="1.397" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="-1.905" y="-2.794" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="D">
+<wire x1="-2.54" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<text x="-3.556" y="2.0066" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-4.318" y="-3.5814" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1N400X" prefix="D" uservalue="yes">
+<description>&lt;B&gt;Rectifier Diodes&lt;/B&gt;
+&lt;ul&gt;
+&lt;li&gt;
+often used in power supply to prevent damage from reverse polarization
+&lt;/ul&gt;</description>
+<gates>
+<gate name="1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name=".4" package="DO41-4">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".2" package="DO41-2">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".3" package="DO41-3">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".1" package="DO41-1">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -397,19 +538,19 @@
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+<clearance class="0" value="0.205"/>
 </class>
 </classes>
 <parts>
 <part name="G" library="mb_supply" deviceset="GND(T)" device=""/>
 <part name="JOG" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="IN" library="mb_supply" deviceset="IN(T)" device=""/>
-<part name="OUT" library="mb_supply" deviceset="OUT(T)" device=""/>
-<part name="JOUT" library="mb_supply" deviceset="PAD" device=""/>
+<part name="JOT" library="mb_supply" deviceset="PAD" device=""/>
 <part name="JIN" library="mb_supply" deviceset="PAD" device=""/>
-<part name="+9V" library="mb_supply" deviceset="+9V(T)" device=""/>
-<part name="LED" library="mb_supply" deviceset="PAD" device=""/>
 <part name="JIG" library="mb_supply" deviceset="GND(T)" device=""/>
 <part name="SW2" library="mb_switches" deviceset="3PDT" device=""/>
+<part name="U$1" library="xc_library" deviceset="BOARDLINK" device=""/>
+<part name="+9V" library="mb_supply" deviceset="+9V(T)" device=""/>
+<part name="D1" library="mb_diodes" deviceset="1N400X" device=".3" value="1N4001"/>
 </parts>
 <sheets>
 <sheet>
@@ -418,27 +559,19 @@
 <instances>
 <instance part="G" gate="GND" x="25.4" y="12.7"/>
 <instance part="JOG" gate="GND" x="20.32" y="15.24"/>
-<instance part="IN" gate="G$1" x="12.7" y="12.7" rot="R90"/>
-<instance part="OUT" gate="G$1" x="40.64" y="38.1" rot="R90"/>
-<instance part="JOUT" gate="G$1" x="38.1" y="12.7" rot="R270"/>
+<instance part="JOT" gate="G$1" x="38.1" y="12.7" rot="R270"/>
 <instance part="JIN" gate="G$1" x="15.24" y="38.1" rot="R90"/>
-<instance part="+9V" gate="+9V" x="33.02" y="45.72"/>
-<instance part="LED" gate="G$1" x="27.94" y="38.1" rot="R90"/>
-<instance part="JIG" gate="GND" x="27.94" y="15.24"/>
+<instance part="JIG" gate="GND" x="35.56" y="38.1"/>
 <instance part="SW2" gate="A" x="12.7" y="27.94"/>
 <instance part="SW2" gate="B" x="25.4" y="27.94"/>
-<instance part="SW2" gate="C" x="38.1" y="27.94"/>
+<instance part="SW2" gate="C" x="38.1" y="20.32"/>
+<instance part="U$1" gate="G$1" x="27.94" y="45.72"/>
+<instance part="+9V" gate="+9V" x="45.72" y="30.48" rot="R270"/>
+<instance part="D1" gate="1" x="38.1" y="30.48"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="LED" gate="G$1" pin="PAD"/>
-<wire x1="27.94" y1="35.56" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="SW2" gate="B" pin="3"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="G" gate="GND" pin="GND"/>
@@ -448,21 +581,16 @@
 <wire x1="25.4" y1="17.78" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="17.78" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
 <junction x="25.4" y="17.78"/>
-<pinref part="JIG" gate="GND" pin="GND"/>
-<wire x1="27.94" y1="17.78" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="IN" class="0">
 <segment>
-<pinref part="IN" gate="G$1" pin="IN"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="SW2" gate="A" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="G"/>
+<pinref part="JIG" gate="GND" pin="GND"/>
+<wire x1="35.56" y1="41.656" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="JOUT" gate="G$1" pin="PAD"/>
-<wire x1="38.1" y1="22.86" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="JOT" gate="G$1" pin="PAD"/>
 <pinref part="SW2" gate="C" pin="2"/>
 </segment>
 </net>
@@ -479,8 +607,8 @@
 <segment>
 <pinref part="JIN" gate="G$1" pin="PAD"/>
 <wire x1="15.24" y1="35.56" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="33.02" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="25.4" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="25.4" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="7.62" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="7.62" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
@@ -489,11 +617,48 @@
 <pinref part="SW2" gate="C" pin="1"/>
 </segment>
 </net>
-<net name="OUT" class="0">
+<net name="N$1" class="0">
 <segment>
-<pinref part="OUT" gate="G$1" pin="OUT"/>
-<wire x1="40.64" y1="35.56" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="LED"/>
+<wire x1="30.48" y1="41.656" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="B" pin="3"/>
+<wire x1="27.94" y1="35.56" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<wire x1="25.4" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="48.26" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="A" pin="2"/>
+<wire x1="7.62" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="IN"/>
+<wire x1="27.94" y1="41.656" x2="25.4" y2="41.656" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="41.656" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="OUT"/>
+<wire x1="38.1" y1="41.656" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="40.64" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="40.64" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SW2" gate="C" pin="3"/>
+<wire x1="53.34" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="+9V"/>
+<pinref part="D1" gate="1" pin="A"/>
+<wire x1="33.02" y1="41.656" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+9V" class="0">
+<segment>
+<pinref part="D1" gate="1" pin="C"/>
+<pinref part="+9V" gate="+9V" pin="+9V"/>
+<wire x1="40.64" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

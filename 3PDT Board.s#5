@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -223,16 +223,6 @@
 <text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="IN">
-<circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="0" y="5.08" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="IN" x="2.54" y="0" visible="off" length="short" direction="sup" rot="R180"/>
-</symbol>
-<symbol name="OUT">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<pin name="OUT" x="-2.54" y="0" visible="off" length="short" direction="sup"/>
-</symbol>
 <symbol name="PAD">
 <wire x1="0" y1="1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
@@ -264,50 +254,6 @@
 <device name="" package="SQUARE">
 <connects>
 <connect gate="GND" pin="GND" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="IN(T)" prefix="IN">
-<description>&lt;b&gt;Input&lt;/b&gt;
-
-&lt;ul&gt;
-&lt;li&gt;obsolete:  use Pad instead and label net
-&lt;li&gt;shematic input label with circuit board terminal/pad&lt;/li&gt;
-&lt;li&gt;generally used only once on a schematic (because this device labels the net "IN" in the same way as a voltage supply or ground net)
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="IN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SQUARE">
-<connects>
-<connect gate="G$1" pin="IN" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OUT(T)" prefix="OUT">
-<description>&lt;b&gt;Output&lt;/b&gt;
-
-&lt;ul&gt;
-&lt;li&gt;obsolete:  use Pad instead and label net
-&lt;li&gt;output label with circuit board terminal/pad&lt;/li&gt;
-&lt;li&gt;usually appears only once on a schematic&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="OUT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SQUARE">
-<connects>
-<connect gate="G$1" pin="OUT" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -390,6 +336,65 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="xc_library">
+<packages>
+<package name="BOARDLINK">
+<wire x1="-3.556" y1="-1.016" x2="-3.556" y2="2.921" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.556" y1="2.921" x2="8.636" y2="2.921" width="0.127" layer="21" style="shortdash"/>
+<wire x1="8.636" y1="2.921" x2="8.636" y2="-1.016" width="0.127" layer="21" style="shortdash"/>
+<wire x1="8.636" y1="-1.016" x2="-3.556" y2="-1.016" width="0.127" layer="21" style="shortdash"/>
+<pad name="3" x="2.54" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="2" x="0" y="0" drill="1" diameter="2"/>
+<pad name="1" x="-2.54" y="0" drill="1" diameter="2" shape="octagon"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+<pad name="4" x="5.08" y="0" drill="1" diameter="2"/>
+<pad name="5" x="7.62" y="0" drill="1" diameter="2" shape="octagon"/>
+<text x="-2.794" y="1.397" size="1.27" layer="21">I</text>
+<text x="-0.508" y="1.397" size="1.27" layer="21">L</text>
+<text x="2.032" y="1.397" size="1.27" layer="21">9</text>
+<text x="4.445" y="1.397" size="1.27" layer="21">G</text>
+<text x="6.985" y="1.397" size="1.27" layer="21">O</text>
+</package>
+</packages>
+<symbols>
+<symbol name="BOARDLINK">
+<description>Part to connect mother and daughterboards</description>
+<wire x1="0" y1="1.016" x2="10.16" y2="1.016" width="0.254" layer="94"/>
+<wire x1="10.16" y1="1.016" x2="10.16" y2="3.048" width="0.254" layer="94"/>
+<wire x1="10.16" y1="3.048" x2="0" y2="3.048" width="0.254" layer="94"/>
+<wire x1="0" y1="3.048" x2="0" y2="1.016" width="0.254" layer="94"/>
+<pin name="IN" x="0" y="-4.064" length="middle" rot="R90"/>
+<pin name="OUT" x="10.16" y="-4.064" length="middle" rot="R90"/>
+<pin name="+9V" x="5.08" y="-4.064" length="middle" rot="R90"/>
+<pin name="LED" x="2.54" y="-4.064" length="middle" rot="R90"/>
+<pin name="G" x="7.62" y="-4.064" length="middle" rot="R90"/>
+<text x="-1.016" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.762" y="-8.128" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BOARDLINK">
+<gates>
+<gate name="G$1" symbol="BOARDLINK" x="-10.16" y="-20.32"/>
+</gates>
+<devices>
+<device name="" package="BOARDLINK">
+<connects>
+<connect gate="G$1" pin="+9V" pad="3"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="LED" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -397,83 +402,117 @@
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+<clearance class="0" value="0.205"/>
 </class>
 </classes>
 <parts>
-<part name="SW1" library="mb_switches" deviceset="3PDT" device="BLUE"/>
-<part name="GND1" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="GND2" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="IN1" library="mb_supply" deviceset="IN(T)" device=""/>
-<part name="OUT1" library="mb_supply" deviceset="OUT(T)" device=""/>
+<part name="G" library="mb_supply" deviceset="GND(T)" device=""/>
+<part name="JOG" library="mb_supply" deviceset="GND(T)" device=""/>
 <part name="JOUT" library="mb_supply" deviceset="PAD" device=""/>
 <part name="JIN" library="mb_supply" deviceset="PAD" device=""/>
+<part name="JIG" library="mb_supply" deviceset="GND(T)" device=""/>
+<part name="SW2" library="mb_switches" deviceset="3PDT" device=""/>
+<part name="U$1" library="xc_library" deviceset="BOARDLINK" device=""/>
 <part name="+9V1" library="mb_supply" deviceset="+9V(T)" device=""/>
-<part name="LED" library="mb_supply" deviceset="PAD" device=""/>
-<part name="GND3" library="mb_supply" deviceset="GND(T)" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="SW1" gate="A" x="12.7" y="27.94"/>
-<instance part="SW1" gate="B" x="25.4" y="27.94"/>
-<instance part="SW1" gate="C" x="38.1" y="27.94"/>
-<instance part="GND1" gate="GND" x="25.4" y="12.7"/>
-<instance part="GND2" gate="GND" x="99.06" y="35.56"/>
-<instance part="IN1" gate="G$1" x="12.7" y="12.7" rot="R90"/>
-<instance part="OUT1" gate="G$1" x="101.6" y="45.72"/>
+<instance part="G" gate="GND" x="25.4" y="12.7"/>
+<instance part="JOG" gate="GND" x="20.32" y="15.24"/>
 <instance part="JOUT" gate="G$1" x="38.1" y="12.7" rot="R270"/>
 <instance part="JIN" gate="G$1" x="15.24" y="38.1" rot="R90"/>
-<instance part="+9V1" gate="+9V" x="116.84" y="78.74" rot="R180"/>
-<instance part="LED" gate="G$1" x="27.94" y="38.1" rot="R90"/>
-<instance part="GND3" gate="GND" x="63.5" y="35.56"/>
+<instance part="JIG" gate="GND" x="35.56" y="38.1"/>
+<instance part="SW2" gate="A" x="12.7" y="27.94"/>
+<instance part="SW2" gate="B" x="25.4" y="27.94"/>
+<instance part="SW2" gate="C" x="38.1" y="27.94"/>
+<instance part="U$1" gate="G$1" x="27.94" y="45.72"/>
+<instance part="+9V1" gate="+9V" x="33.02" y="38.1" rot="R180"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="LED" gate="G$1" pin="PAD"/>
-<pinref part="SW1" gate="B" pin="3"/>
-<wire x1="27.94" y1="35.56" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
-<pinref part="SW1" gate="B" pin="2"/>
-<pinref part="GND1" gate="GND" pin="GND"/>
-<wire x1="25.4" y1="22.86" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="G" gate="GND" pin="GND"/>
+<wire x1="25.4" y1="22.86" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="B" pin="2"/>
+<pinref part="JOG" gate="GND" pin="GND"/>
+<wire x1="25.4" y1="17.78" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="17.78" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
+<junction x="25.4" y="17.78"/>
 </segment>
-</net>
-<net name="IN" class="0">
 <segment>
-<pinref part="SW1" gate="A" pin="2"/>
-<pinref part="IN1" gate="G$1" pin="IN"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="G"/>
+<pinref part="JIG" gate="GND" pin="GND"/>
+<wire x1="35.56" y1="41.656" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="SW1" gate="C" pin="2"/>
 <pinref part="JOUT" gate="G$1" pin="PAD"/>
 <wire x1="38.1" y1="22.86" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="C" pin="2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="SW1" gate="A" pin="1"/>
 <wire x1="10.16" y1="33.02" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="B" pin="1"/>
 <wire x1="10.16" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="45.72" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="A" pin="1"/>
+<pinref part="SW2" gate="B" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="JIN" gate="G$1" pin="PAD"/>
-<pinref part="SW1" gate="A" pin="3"/>
 <wire x1="15.24" y1="35.56" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="33.02" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="7.62" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="A" pin="3"/>
+<junction x="15.24" y="33.02"/>
+<pinref part="SW2" gate="C" pin="1"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="LED"/>
+<wire x1="30.48" y1="41.656" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="B" pin="3"/>
+<wire x1="27.94" y1="35.56" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<wire x1="25.4" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="48.26" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="A" pin="2"/>
+<wire x1="7.62" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="IN"/>
+<wire x1="27.94" y1="41.656" x2="25.4" y2="41.656" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="41.656" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="OUT"/>
+<pinref part="SW2" gate="C" pin="3"/>
+<wire x1="38.1" y1="41.656" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+9V" class="0">
+<segment>
+<pinref part="+9V1" gate="+9V" pin="+9V"/>
+<pinref part="U$1" gate="G$1" pin="+9V"/>
+<wire x1="33.02" y1="40.64" x2="33.02" y2="41.656" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
