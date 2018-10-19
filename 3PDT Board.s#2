@@ -567,7 +567,7 @@ often used in power supply to prevent damage from reverse polarization
 <instance part="SW2" gate="C" x="38.1" y="20.32"/>
 <instance part="U$1" gate="G$1" x="27.94" y="45.72"/>
 <instance part="+9V" gate="+9V" x="45.72" y="30.48" rot="R270"/>
-<instance part="D1" gate="1" x="53.34" y="48.26"/>
+<instance part="D1" gate="1" x="38.1" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -645,6 +645,20 @@ often used in power supply to prevent damage from reverse polarization
 <wire x1="53.34" y1="40.64" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SW2" gate="C" pin="3"/>
 <wire x1="53.34" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="+9V"/>
+<pinref part="D1" gate="1" pin="A"/>
+<wire x1="33.02" y1="41.656" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+9V" class="0">
+<segment>
+<pinref part="D1" gate="1" pin="C"/>
+<pinref part="+9V" gate="+9V" pin="+9V"/>
+<wire x1="40.64" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

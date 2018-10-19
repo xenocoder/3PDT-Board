@@ -413,7 +413,7 @@
 <part name="JIG" library="mb_supply" deviceset="GND(T)" device=""/>
 <part name="SW2" library="mb_switches" deviceset="3PDT" device=""/>
 <part name="U$1" library="xc_library" deviceset="BOARDLINK" device=""/>
-<part name="+9V1" library="mb_supply" deviceset="+9V(T)" device=""/>
+<part name="+9V" library="mb_supply" deviceset="+9V(T)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -429,7 +429,7 @@
 <instance part="SW2" gate="B" x="25.4" y="27.94"/>
 <instance part="SW2" gate="C" x="38.1" y="27.94"/>
 <instance part="U$1" gate="G$1" x="27.94" y="45.72"/>
-<instance part="+9V1" gate="+9V" x="33.02" y="38.1" rot="R180"/>
+<instance part="+9V" gate="+9V" x="33.02" y="38.1" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -510,7 +510,7 @@
 </net>
 <net name="+9V" class="0">
 <segment>
-<pinref part="+9V1" gate="+9V" pin="+9V"/>
+<pinref part="+9V" gate="+9V" pin="+9V"/>
 <pinref part="U$1" gate="G$1" pin="+9V"/>
 <wire x1="33.02" y1="40.64" x2="33.02" y2="41.656" width="0.1524" layer="91"/>
 </segment>

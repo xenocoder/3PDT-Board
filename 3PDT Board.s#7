@@ -223,11 +223,6 @@
 <text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="OUT">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<pin name="OUT" x="-2.54" y="0" visible="off" length="short" direction="sup"/>
-</symbol>
 <symbol name="PAD">
 <wire x1="0" y1="1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
@@ -252,28 +247,6 @@
 <device name="" package="SQUARE">
 <connects>
 <connect gate="GND" pin="GND" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OUT(T)" prefix="OUT">
-<description>&lt;b&gt;Output&lt;/b&gt;
-
-&lt;ul&gt;
-&lt;li&gt;obsolete:  use Pad instead and label net
-&lt;li&gt;output label with circuit board terminal/pad&lt;/li&gt;
-&lt;li&gt;usually appears only once on a schematic&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="OUT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SQUARE">
-<connects>
-<connect gate="G$1" pin="OUT" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -407,7 +380,6 @@
 <parts>
 <part name="G" library="mb_supply" deviceset="GND(T)" device=""/>
 <part name="JOG" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="OUT" library="mb_supply" deviceset="OUT(T)" device=""/>
 <part name="JOUT" library="mb_supply" deviceset="PAD" device=""/>
 <part name="JIN" library="mb_supply" deviceset="PAD" device=""/>
 <part name="JIG" library="mb_supply" deviceset="GND(T)" device=""/>
@@ -421,7 +393,6 @@
 <instances>
 <instance part="G" gate="GND" x="25.4" y="12.7"/>
 <instance part="JOG" gate="GND" x="20.32" y="15.24"/>
-<instance part="OUT" gate="G$1" x="63.5" y="38.1" rot="R90"/>
 <instance part="JOUT" gate="G$1" x="38.1" y="12.7" rot="R270"/>
 <instance part="JIN" gate="G$1" x="15.24" y="38.1" rot="R90"/>
 <instance part="JIG" gate="GND" x="35.56" y="38.1"/>

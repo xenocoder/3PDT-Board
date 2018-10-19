@@ -427,9 +427,9 @@
 <instance part="JIG" gate="GND" x="35.56" y="38.1"/>
 <instance part="SW2" gate="A" x="12.7" y="27.94"/>
 <instance part="SW2" gate="B" x="25.4" y="27.94"/>
-<instance part="SW2" gate="C" x="38.1" y="27.94"/>
+<instance part="SW2" gate="C" x="38.1" y="20.32"/>
 <instance part="U$1" gate="G$1" x="27.94" y="45.72"/>
-<instance part="+9V" gate="+9V" x="33.02" y="38.1" rot="R180"/>
+<instance part="+9V" gate="+9V" x="33.02" y="33.02" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -453,7 +453,6 @@
 <net name="N$2" class="0">
 <segment>
 <pinref part="JOUT" gate="G$1" pin="PAD"/>
-<wire x1="38.1" y1="22.86" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="SW2" gate="C" pin="2"/>
 </segment>
 </net>
@@ -470,8 +469,8 @@
 <segment>
 <pinref part="JIN" gate="G$1" pin="PAD"/>
 <wire x1="15.24" y1="35.56" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="33.02" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="25.4" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="25.4" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="7.62" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="7.62" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
@@ -503,16 +502,11 @@
 <net name="N$6" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="OUT"/>
+<wire x1="38.1" y1="41.656" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="40.64" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="40.64" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SW2" gate="C" pin="3"/>
-<wire x1="38.1" y1="41.656" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="+9V" class="0">
-<segment>
-<pinref part="+9V" gate="+9V" pin="+9V"/>
-<pinref part="U$1" gate="G$1" pin="+9V"/>
-<wire x1="33.02" y1="40.64" x2="33.02" y2="41.656" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

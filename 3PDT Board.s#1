@@ -544,7 +544,7 @@ often used in power supply to prevent damage from reverse polarization
 <parts>
 <part name="G" library="mb_supply" deviceset="GND(T)" device=""/>
 <part name="JOG" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="JOUT" library="mb_supply" deviceset="PAD" device=""/>
+<part name="JOT" library="mb_supply" deviceset="PAD" device=""/>
 <part name="JIN" library="mb_supply" deviceset="PAD" device=""/>
 <part name="JIG" library="mb_supply" deviceset="GND(T)" device=""/>
 <part name="SW2" library="mb_switches" deviceset="3PDT" device=""/>
@@ -559,7 +559,7 @@ often used in power supply to prevent damage from reverse polarization
 <instances>
 <instance part="G" gate="GND" x="25.4" y="12.7"/>
 <instance part="JOG" gate="GND" x="20.32" y="15.24"/>
-<instance part="JOUT" gate="G$1" x="38.1" y="12.7" rot="R270"/>
+<instance part="JOT" gate="G$1" x="38.1" y="12.7" rot="R270"/>
 <instance part="JIN" gate="G$1" x="15.24" y="38.1" rot="R90"/>
 <instance part="JIG" gate="GND" x="35.56" y="38.1"/>
 <instance part="SW2" gate="A" x="12.7" y="27.94"/>
@@ -590,7 +590,7 @@ often used in power supply to prevent damage from reverse polarization
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="JOUT" gate="G$1" pin="PAD"/>
+<pinref part="JOT" gate="G$1" pin="PAD"/>
 <pinref part="SW2" gate="C" pin="2"/>
 </segment>
 </net>
