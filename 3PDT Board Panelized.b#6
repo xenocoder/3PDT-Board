@@ -78,19 +78,19 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="100" width="0" layer="20"/>
-<wire x1="100" y1="100" x2="0" y2="100" width="0" layer="20"/>
-<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="96.52" y2="0" width="0" layer="20"/>
+<wire x1="96.52" y1="0" x2="96.52" y2="92.71" width="0" layer="20"/>
+<wire x1="96.52" y1="92.71" x2="0" y2="92.71" width="0" layer="20"/>
+<wire x1="0" y1="92.71" x2="0" y2="0" width="0" layer="20"/>
 <text x="29.735525" y="9.04595625" size="0.8128" layer="25" font="vector" rot="R90">3PDT Daughterboard v1.2</text>
 <text x="31.259525" y="9.04595625" size="0.8128" layer="25" font="vector" rot="R90">Xenocoder Designs 09 2018</text>
-<text x="12.209525" y="11.58595625" size="1.016" layer="125" ratio="12" rot="R90">+9V</text>
-<text x="10.431525" y="18.24075625" size="1.27" layer="125" ratio="12" rot="R90">D1</text>
-<text x="11.193525" y="10.18895625" size="1.016" layer="125" ratio="12" rot="R270">G</text>
-<text x="12.082525" y="25.04795625" size="1.016" layer="125" ratio="12" rot="R90">JIG</text>
-<text x="12.082525" y="27.71495625" size="1.016" layer="125" ratio="12" rot="R90">JIN</text>
-<text x="29.227525" y="24.41295625" size="1.016" layer="125" ratio="12" rot="R90">JOG</text>
-<text x="29.227525" y="27.84195625" size="1.016" layer="125" ratio="12" rot="R90">JOT</text>
+<text x="12.209525" y="11.58595625" size="1.016" layer="25" ratio="12" rot="R90">+9V</text>
+<text x="10.431525" y="18.24075625" size="1.27" layer="25" ratio="12" rot="R90">D1</text>
+<text x="11.193525" y="10.18895625" size="1.016" layer="25" ratio="12" rot="R270">G</text>
+<text x="12.082525" y="25.04795625" size="1.016" layer="25" ratio="12" rot="R90">JIG</text>
+<text x="12.082525" y="27.71495625" size="1.016" layer="25" ratio="12" rot="R90">JIN</text>
+<text x="29.227525" y="24.41295625" size="1.016" layer="25" ratio="12" rot="R90">JOG</text>
+<text x="29.227525" y="27.84195625" size="1.016" layer="25" ratio="12" rot="R90">JOT</text>
 <wire x1="7.62" y1="7.62" x2="33.02" y2="7.62" width="0.1524" layer="20"/>
 <wire x1="33.02" y1="7.62" x2="33.02" y2="16.256" width="0.1524" layer="20"/>
 <wire x1="33.02" y1="16.256" x2="33.02" y2="19.304" width="0.1524" layer="20"/>
@@ -101,13 +101,13 @@
 <wire x1="7.62" y1="31.75" x2="7.62" y2="7.62" width="0.1524" layer="20"/>
 <text x="57.675525" y="9.04595625" size="0.8128" layer="25" font="vector" rot="R90">3PDT Daughterboard v1.2</text>
 <text x="59.199525" y="9.04595625" size="0.8128" layer="25" font="vector" rot="R90">Xenocoder Designs 09 2018</text>
-<text x="40.149525" y="11.58595625" size="1.016" layer="125" ratio="12" rot="R90">+9V</text>
-<text x="38.371525" y="18.24075625" size="1.27" layer="125" ratio="12" rot="R90">D1</text>
-<text x="39.133525" y="10.18895625" size="1.016" layer="125" ratio="12" rot="R270">G</text>
-<text x="40.022525" y="25.04795625" size="1.016" layer="125" ratio="12" rot="R90">JIG</text>
-<text x="40.022525" y="27.71495625" size="1.016" layer="125" ratio="12" rot="R90">JIN</text>
-<text x="57.167525" y="24.41295625" size="1.016" layer="125" ratio="12" rot="R90">JOG</text>
-<text x="57.167525" y="27.84195625" size="1.016" layer="125" ratio="12" rot="R90">JOT</text>
+<text x="40.149525" y="11.58595625" size="1.016" layer="25" ratio="12" rot="R90">+9V</text>
+<text x="38.371525" y="18.24075625" size="1.27" layer="25" ratio="12" rot="R90">D1</text>
+<text x="39.133525" y="10.18895625" size="1.016" layer="25" ratio="12" rot="R270">G</text>
+<text x="40.022525" y="25.04795625" size="1.016" layer="25" ratio="12" rot="R90">JIG</text>
+<text x="40.022525" y="27.71495625" size="1.016" layer="25" ratio="12" rot="R90">JIN</text>
+<text x="57.167525" y="24.41295625" size="1.016" layer="25" ratio="12" rot="R90">JOG</text>
+<text x="57.167525" y="27.84195625" size="1.016" layer="25" ratio="12" rot="R90">JOT</text>
 <wire x1="35.56" y1="7.62" x2="60.96" y2="7.62" width="0.1524" layer="20"/>
 <wire x1="60.96" y1="7.62" x2="60.96" y2="31.75" width="0.1524" layer="20"/>
 <wire x1="60.96" y1="31.75" x2="49.784" y2="31.75" width="0.1524" layer="20"/>
@@ -116,13 +116,13 @@
 <wire x1="35.56" y1="31.75" x2="35.56" y2="19.304" width="0.1524" layer="20"/>
 <text x="85.615525" y="9.04595625" size="0.8128" layer="25" font="vector" rot="R90">3PDT Daughterboard v1.2</text>
 <text x="87.139525" y="9.04595625" size="0.8128" layer="25" font="vector" rot="R90">Xenocoder Designs 09 2018</text>
-<text x="68.089525" y="11.58595625" size="1.016" layer="125" ratio="12" rot="R90">+9V</text>
-<text x="66.311525" y="18.24075625" size="1.27" layer="125" ratio="12" rot="R90">D1</text>
-<text x="67.073525" y="10.18895625" size="1.016" layer="125" ratio="12" rot="R270">G</text>
-<text x="67.962525" y="25.04795625" size="1.016" layer="125" ratio="12" rot="R90">JIG</text>
-<text x="67.962525" y="27.71495625" size="1.016" layer="125" ratio="12" rot="R90">JIN</text>
-<text x="85.107525" y="24.41295625" size="1.016" layer="125" ratio="12" rot="R90">JOG</text>
-<text x="85.107525" y="27.84195625" size="1.016" layer="125" ratio="12" rot="R90">JOT</text>
+<text x="68.089525" y="11.58595625" size="1.016" layer="25" ratio="12" rot="R90">+9V</text>
+<text x="66.311525" y="18.24075625" size="1.27" layer="25" ratio="12" rot="R90">D1</text>
+<text x="67.073525" y="10.18895625" size="1.016" layer="25" ratio="12" rot="R270">G</text>
+<text x="67.962525" y="25.04795625" size="1.016" layer="25" ratio="12" rot="R90">JIG</text>
+<text x="67.962525" y="27.71495625" size="1.016" layer="25" ratio="12" rot="R90">JIN</text>
+<text x="85.107525" y="24.41295625" size="1.016" layer="25" ratio="12" rot="R90">JOG</text>
+<text x="85.107525" y="27.84195625" size="1.016" layer="25" ratio="12" rot="R90">JOT</text>
 <wire x1="35.56" y1="19.304" x2="35.56" y2="16.256" width="0.1524" layer="20"/>
 <wire x1="35.56" y1="16.256" x2="35.56" y2="7.62" width="0.1524" layer="20"/>
 <wire x1="63.5" y1="7.62" x2="88.9" y2="7.62" width="0.1524" layer="20"/>
@@ -203,13 +203,13 @@
 <wire x1="77.724" y1="31.75" x2="74.676" y2="31.75" width="0.1524" layer="20"/>
 <text x="29.735525" y="35.71595625" size="0.8128" layer="25" font="vector" rot="R90">3PDT Daughterboard v1.2</text>
 <text x="31.259525" y="35.71595625" size="0.8128" layer="25" font="vector" rot="R90">Xenocoder Designs 09 2018</text>
-<text x="12.209525" y="38.25595625" size="1.016" layer="125" ratio="12" rot="R90">+9V</text>
-<text x="10.431525" y="44.91075625" size="1.27" layer="125" ratio="12" rot="R90">D1</text>
-<text x="11.193525" y="36.85895625" size="1.016" layer="125" ratio="12" rot="R270">G</text>
-<text x="12.082525" y="51.71795625" size="1.016" layer="125" ratio="12" rot="R90">JIG</text>
-<text x="12.082525" y="54.38495625" size="1.016" layer="125" ratio="12" rot="R90">JIN</text>
-<text x="29.227525" y="51.08295625" size="1.016" layer="125" ratio="12" rot="R90">JOG</text>
-<text x="29.227525" y="54.51195625" size="1.016" layer="125" ratio="12" rot="R90">JOT</text>
+<text x="12.209525" y="38.25595625" size="1.016" layer="25" ratio="12" rot="R90">+9V</text>
+<text x="10.431525" y="44.91075625" size="1.27" layer="25" ratio="12" rot="R90">D1</text>
+<text x="11.193525" y="36.85895625" size="1.016" layer="25" ratio="12" rot="R270">G</text>
+<text x="12.082525" y="51.71795625" size="1.016" layer="25" ratio="12" rot="R90">JIG</text>
+<text x="12.082525" y="54.38495625" size="1.016" layer="25" ratio="12" rot="R90">JIN</text>
+<text x="29.227525" y="51.08295625" size="1.016" layer="25" ratio="12" rot="R90">JOG</text>
+<text x="29.227525" y="54.51195625" size="1.016" layer="25" ratio="12" rot="R90">JOT</text>
 <wire x1="7.62" y1="34.29" x2="33.02" y2="34.29" width="0.1524" layer="20"/>
 <wire x1="33.02" y1="34.29" x2="33.02" y2="42.926" width="0.1524" layer="20"/>
 <wire x1="33.02" y1="42.926" x2="33.02" y2="45.974" width="0.1524" layer="20"/>
@@ -220,13 +220,13 @@
 <wire x1="7.62" y1="58.42" x2="7.62" y2="34.29" width="0.1524" layer="20"/>
 <text x="57.675525" y="35.71595625" size="0.8128" layer="25" font="vector" rot="R90">3PDT Daughterboard v1.2</text>
 <text x="59.199525" y="35.71595625" size="0.8128" layer="25" font="vector" rot="R90">Xenocoder Designs 09 2018</text>
-<text x="40.149525" y="38.25595625" size="1.016" layer="125" ratio="12" rot="R90">+9V</text>
-<text x="38.371525" y="44.91075625" size="1.27" layer="125" ratio="12" rot="R90">D1</text>
-<text x="39.133525" y="36.85895625" size="1.016" layer="125" ratio="12" rot="R270">G</text>
-<text x="40.022525" y="51.71795625" size="1.016" layer="125" ratio="12" rot="R90">JIG</text>
-<text x="40.022525" y="54.38495625" size="1.016" layer="125" ratio="12" rot="R90">JIN</text>
-<text x="57.167525" y="51.08295625" size="1.016" layer="125" ratio="12" rot="R90">JOG</text>
-<text x="57.167525" y="54.51195625" size="1.016" layer="125" ratio="12" rot="R90">JOT</text>
+<text x="40.149525" y="38.25595625" size="1.016" layer="25" ratio="12" rot="R90">+9V</text>
+<text x="38.371525" y="44.91075625" size="1.27" layer="25" ratio="12" rot="R90">D1</text>
+<text x="39.133525" y="36.85895625" size="1.016" layer="25" ratio="12" rot="R270">G</text>
+<text x="40.022525" y="51.71795625" size="1.016" layer="25" ratio="12" rot="R90">JIG</text>
+<text x="40.022525" y="54.38495625" size="1.016" layer="25" ratio="12" rot="R90">JIN</text>
+<text x="57.167525" y="51.08295625" size="1.016" layer="25" ratio="12" rot="R90">JOG</text>
+<text x="57.167525" y="54.51195625" size="1.016" layer="25" ratio="12" rot="R90">JOT</text>
 <wire x1="35.56" y1="34.29" x2="60.96" y2="34.29" width="0.1524" layer="20"/>
 <wire x1="60.96" y1="34.29" x2="60.96" y2="58.42" width="0.1524" layer="20"/>
 <wire x1="60.96" y1="58.42" x2="49.784" y2="58.42" width="0.1524" layer="20"/>
@@ -235,13 +235,13 @@
 <wire x1="35.56" y1="58.42" x2="35.56" y2="45.974" width="0.1524" layer="20"/>
 <text x="85.615525" y="35.71595625" size="0.8128" layer="25" font="vector" rot="R90">3PDT Daughterboard v1.2</text>
 <text x="87.139525" y="35.71595625" size="0.8128" layer="25" font="vector" rot="R90">Xenocoder Designs 09 2018</text>
-<text x="68.089525" y="38.25595625" size="1.016" layer="125" ratio="12" rot="R90">+9V</text>
-<text x="66.311525" y="44.91075625" size="1.27" layer="125" ratio="12" rot="R90">D1</text>
-<text x="67.073525" y="36.85895625" size="1.016" layer="125" ratio="12" rot="R270">G</text>
-<text x="67.962525" y="51.71795625" size="1.016" layer="125" ratio="12" rot="R90">JIG</text>
-<text x="67.962525" y="54.38495625" size="1.016" layer="125" ratio="12" rot="R90">JIN</text>
-<text x="85.107525" y="51.08295625" size="1.016" layer="125" ratio="12" rot="R90">JOG</text>
-<text x="85.107525" y="54.51195625" size="1.016" layer="125" ratio="12" rot="R90">JOT</text>
+<text x="68.089525" y="38.25595625" size="1.016" layer="25" ratio="12" rot="R90">+9V</text>
+<text x="66.311525" y="44.91075625" size="1.27" layer="25" ratio="12" rot="R90">D1</text>
+<text x="67.073525" y="36.85895625" size="1.016" layer="25" ratio="12" rot="R270">G</text>
+<text x="67.962525" y="51.71795625" size="1.016" layer="25" ratio="12" rot="R90">JIG</text>
+<text x="67.962525" y="54.38495625" size="1.016" layer="25" ratio="12" rot="R90">JIN</text>
+<text x="85.107525" y="51.08295625" size="1.016" layer="25" ratio="12" rot="R90">JOG</text>
+<text x="85.107525" y="54.51195625" size="1.016" layer="25" ratio="12" rot="R90">JOT</text>
 <wire x1="35.56" y1="45.974" x2="35.56" y2="42.926" width="0.1524" layer="20"/>
 <wire x1="35.56" y1="42.926" x2="35.56" y2="34.29" width="0.1524" layer="20"/>
 <wire x1="63.5" y1="34.29" x2="88.9" y2="34.29" width="0.1524" layer="20"/>
@@ -322,13 +322,13 @@
 <wire x1="77.724" y1="58.42" x2="74.676" y2="58.42" width="0.1524" layer="20"/>
 <text x="29.735525" y="62.38595625" size="0.8128" layer="25" font="vector" rot="R90">3PDT Daughterboard v1.2</text>
 <text x="31.259525" y="62.38595625" size="0.8128" layer="25" font="vector" rot="R90">Xenocoder Designs 09 2018</text>
-<text x="12.209525" y="64.92595625" size="1.016" layer="125" ratio="12" rot="R90">+9V</text>
-<text x="10.431525" y="71.58075625" size="1.27" layer="125" ratio="12" rot="R90">D1</text>
-<text x="11.193525" y="63.52895625" size="1.016" layer="125" ratio="12" rot="R270">G</text>
-<text x="12.082525" y="78.38795625" size="1.016" layer="125" ratio="12" rot="R90">JIG</text>
-<text x="12.082525" y="81.05495625" size="1.016" layer="125" ratio="12" rot="R90">JIN</text>
-<text x="29.227525" y="77.75295625" size="1.016" layer="125" ratio="12" rot="R90">JOG</text>
-<text x="29.227525" y="81.18195625" size="1.016" layer="125" ratio="12" rot="R90">JOT</text>
+<text x="12.209525" y="64.92595625" size="1.016" layer="25" ratio="12" rot="R90">+9V</text>
+<text x="10.431525" y="71.58075625" size="1.27" layer="25" ratio="12" rot="R90">D1</text>
+<text x="11.193525" y="63.52895625" size="1.016" layer="25" ratio="12" rot="R270">G</text>
+<text x="12.082525" y="78.38795625" size="1.016" layer="25" ratio="12" rot="R90">JIG</text>
+<text x="12.082525" y="81.05495625" size="1.016" layer="25" ratio="12" rot="R90">JIN</text>
+<text x="29.227525" y="77.75295625" size="1.016" layer="25" ratio="12" rot="R90">JOG</text>
+<text x="29.227525" y="81.18195625" size="1.016" layer="25" ratio="12" rot="R90">JOT</text>
 <wire x1="7.62" y1="60.96" x2="33.02" y2="60.96" width="0.1524" layer="20"/>
 <wire x1="33.02" y1="60.96" x2="33.02" y2="69.596" width="0.1524" layer="20"/>
 <wire x1="33.02" y1="69.596" x2="33.02" y2="72.644" width="0.1524" layer="20"/>
@@ -339,13 +339,13 @@
 <wire x1="7.62" y1="85.09" x2="7.62" y2="60.96" width="0.1524" layer="20"/>
 <text x="57.675525" y="62.38595625" size="0.8128" layer="25" font="vector" rot="R90">3PDT Daughterboard v1.2</text>
 <text x="59.199525" y="62.38595625" size="0.8128" layer="25" font="vector" rot="R90">Xenocoder Designs 09 2018</text>
-<text x="40.149525" y="64.92595625" size="1.016" layer="125" ratio="12" rot="R90">+9V</text>
-<text x="38.371525" y="71.58075625" size="1.27" layer="125" ratio="12" rot="R90">D1</text>
-<text x="39.133525" y="63.52895625" size="1.016" layer="125" ratio="12" rot="R270">G</text>
-<text x="40.022525" y="78.38795625" size="1.016" layer="125" ratio="12" rot="R90">JIG</text>
-<text x="40.022525" y="81.05495625" size="1.016" layer="125" ratio="12" rot="R90">JIN</text>
-<text x="57.167525" y="77.75295625" size="1.016" layer="125" ratio="12" rot="R90">JOG</text>
-<text x="57.167525" y="81.18195625" size="1.016" layer="125" ratio="12" rot="R90">JOT</text>
+<text x="40.149525" y="64.92595625" size="1.016" layer="25" ratio="12" rot="R90">+9V</text>
+<text x="38.371525" y="71.58075625" size="1.27" layer="25" ratio="12" rot="R90">D1</text>
+<text x="39.133525" y="63.52895625" size="1.016" layer="25" ratio="12" rot="R270">G</text>
+<text x="40.022525" y="78.38795625" size="1.016" layer="25" ratio="12" rot="R90">JIG</text>
+<text x="40.022525" y="81.05495625" size="1.016" layer="25" ratio="12" rot="R90">JIN</text>
+<text x="57.167525" y="77.75295625" size="1.016" layer="25" ratio="12" rot="R90">JOG</text>
+<text x="57.167525" y="81.18195625" size="1.016" layer="25" ratio="12" rot="R90">JOT</text>
 <wire x1="35.56" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="20"/>
 <wire x1="60.96" y1="60.96" x2="60.96" y2="85.09" width="0.1524" layer="20"/>
 <wire x1="60.96" y1="85.09" x2="49.784" y2="85.09" width="0.1524" layer="20"/>
@@ -354,13 +354,13 @@
 <wire x1="35.56" y1="85.09" x2="35.56" y2="72.644" width="0.1524" layer="20"/>
 <text x="85.615525" y="62.38595625" size="0.8128" layer="25" font="vector" rot="R90">3PDT Daughterboard v1.2</text>
 <text x="87.139525" y="62.38595625" size="0.8128" layer="25" font="vector" rot="R90">Xenocoder Designs 09 2018</text>
-<text x="68.089525" y="64.92595625" size="1.016" layer="125" ratio="12" rot="R90">+9V</text>
-<text x="66.311525" y="71.58075625" size="1.27" layer="125" ratio="12" rot="R90">D1</text>
-<text x="67.073525" y="63.52895625" size="1.016" layer="125" ratio="12" rot="R270">G</text>
-<text x="67.962525" y="78.38795625" size="1.016" layer="125" ratio="12" rot="R90">JIG</text>
-<text x="67.962525" y="81.05495625" size="1.016" layer="125" ratio="12" rot="R90">JIN</text>
-<text x="85.107525" y="77.75295625" size="1.016" layer="125" ratio="12" rot="R90">JOG</text>
-<text x="85.107525" y="81.18195625" size="1.016" layer="125" ratio="12" rot="R90">JOT</text>
+<text x="68.089525" y="64.92595625" size="1.016" layer="25" ratio="12" rot="R90">+9V</text>
+<text x="66.311525" y="71.58075625" size="1.27" layer="25" ratio="12" rot="R90">D1</text>
+<text x="67.073525" y="63.52895625" size="1.016" layer="25" ratio="12" rot="R270">G</text>
+<text x="67.962525" y="78.38795625" size="1.016" layer="25" ratio="12" rot="R90">JIG</text>
+<text x="67.962525" y="81.05495625" size="1.016" layer="25" ratio="12" rot="R90">JIN</text>
+<text x="85.107525" y="77.75295625" size="1.016" layer="25" ratio="12" rot="R90">JOG</text>
+<text x="85.107525" y="81.18195625" size="1.016" layer="25" ratio="12" rot="R90">JOT</text>
 <wire x1="35.56" y1="72.644" x2="35.56" y2="69.596" width="0.1524" layer="20"/>
 <wire x1="35.56" y1="69.596" x2="35.56" y2="60.96" width="0.1524" layer="20"/>
 <wire x1="63.5" y1="60.96" x2="88.9" y2="60.96" width="0.1524" layer="20"/>
@@ -523,6 +523,51 @@
 <wire x1="91.44" y1="72.644" x2="91.44" y2="69.596" width="0.1524" layer="20"/>
 <wire x1="91.44" y1="69.596" x2="88.9" y2="69.596" width="0.1524" layer="20"/>
 <wire x1="88.9" y1="69.596" x2="88.9" y2="72.644" width="0.1524" layer="20"/>
+<wire x1="21.844" y1="5.08" x2="18.796" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="21.844" y1="5.08" x2="18.796" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="18.796" y1="7.62" x2="21.844" y2="7.62" width="0.1524" layer="20"/>
+<hole x="18.796" y="5.08" drill="0.55"/>
+<hole x="19.812" y="5.08" drill="0.55"/>
+<hole x="20.828" y="5.08" drill="0.55"/>
+<hole x="21.844" y="5.08" drill="0.55"/>
+<hole x="18.796" y="7.62" drill="0.55"/>
+<hole x="19.812" y="7.62" drill="0.55"/>
+<hole x="20.828" y="7.62" drill="0.55"/>
+<hole x="21.844" y="7.62" drill="0.55"/>
+<wire x1="18.796" y1="5.08" x2="18.796" y2="7.62" width="0.1524" layer="20"/>
+<wire x1="18.796" y1="7.62" x2="21.844" y2="7.62" width="0.1524" layer="20"/>
+<wire x1="21.844" y1="7.62" x2="21.844" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="21.844" y1="5.08" x2="18.796" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="49.784" y1="5.08" x2="46.736" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="49.784" y1="5.08" x2="46.736" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="46.736" y1="7.62" x2="49.784" y2="7.62" width="0.1524" layer="20"/>
+<hole x="46.736" y="5.08" drill="0.55"/>
+<hole x="47.752" y="5.08" drill="0.55"/>
+<hole x="48.768" y="5.08" drill="0.55"/>
+<hole x="49.784" y="5.08" drill="0.55"/>
+<hole x="46.736" y="7.62" drill="0.55"/>
+<hole x="47.752" y="7.62" drill="0.55"/>
+<hole x="48.768" y="7.62" drill="0.55"/>
+<hole x="49.784" y="7.62" drill="0.55"/>
+<wire x1="46.736" y1="5.08" x2="46.736" y2="7.62" width="0.1524" layer="20"/>
+<wire x1="46.736" y1="7.62" x2="49.784" y2="7.62" width="0.1524" layer="20"/>
+<wire x1="49.784" y1="7.62" x2="49.784" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="49.784" y1="5.08" x2="46.736" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="77.724" y1="5.08" x2="74.676" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="77.724" y1="5.08" x2="74.676" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="74.676" y1="7.62" x2="77.724" y2="7.62" width="0.1524" layer="20"/>
+<hole x="74.676" y="5.08" drill="0.55"/>
+<hole x="75.692" y="5.08" drill="0.55"/>
+<hole x="76.708" y="5.08" drill="0.55"/>
+<hole x="77.724" y="5.08" drill="0.55"/>
+<hole x="74.676" y="7.62" drill="0.55"/>
+<hole x="75.692" y="7.62" drill="0.55"/>
+<hole x="76.708" y="7.62" drill="0.55"/>
+<hole x="77.724" y="7.62" drill="0.55"/>
+<wire x1="74.676" y1="5.08" x2="74.676" y2="7.62" width="0.1524" layer="20"/>
+<wire x1="74.676" y1="7.62" x2="77.724" y2="7.62" width="0.1524" layer="20"/>
+<wire x1="77.724" y1="7.62" x2="77.724" y2="5.08" width="0.1524" layer="20"/>
+<wire x1="77.724" y1="5.08" x2="74.676" y2="5.08" width="0.1524" layer="20"/>
 </plain>
 <libraries>
 <library name="mb_switches">
@@ -807,213 +852,87 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="G" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="9.80795625" smashed="yes">
-<attribute name="NAME" x="11.193525" y="10.18895625" size="1.016" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="JOG" library="mb_supply" package="SQUARE" value="GND(T)" x="30.751525" y="26.31795625" smashed="yes">
-<attribute name="NAME" x="29.227525" y="24.41295625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JOT" library="mb_supply" package="SQUARE" value="" x="30.751525" y="28.85795625" smashed="yes">
-<attribute name="NAME" x="29.227525" y="27.84195625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIN" library="mb_supply" package="SQUARE" value="" x="9.796525" y="28.85795625" smashed="yes">
-<attribute name="NAME" x="12.082525" y="27.71495625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIG" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="26.31795625" smashed="yes">
-<attribute name="NAME" x="12.082525" y="25.04795625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="G" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="9.80795625" smashed="yes"/>
+<element name="JOG" library="mb_supply" package="SQUARE" value="GND(T)" x="30.751525" y="26.31795625" smashed="yes"/>
+<element name="JOT" library="mb_supply" package="SQUARE" value="" x="30.751525" y="28.85795625" smashed="yes"/>
+<element name="JIN" library="mb_supply" package="SQUARE" value="" x="9.796525" y="28.85795625" smashed="yes"/>
+<element name="JIG" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="26.31795625" smashed="yes"/>
 <element name="SW2" library="mb_switches" package="3PDT" value="3PDT" x="20.464525" y="16.66595625" smashed="yes"/>
 <element name="U$1" library="xc_library" package="BOARDLINK" value="BOARDLINK" x="17.670525" y="27.46095625" smashed="yes"/>
-<element name="+9V" library="mb_supply" package="SQUARE" value="+9V(T)" x="9.796525" y="12.34795625" smashed="yes">
-<attribute name="NAME" x="12.209525" y="11.58595625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="D1" library="mb_diodes" package="DO41-3" value="1N4001" x="9.796525" y="19.33295625" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.431525" y="18.24075625" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="G1" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="9.80795625" smashed="yes">
-<attribute name="NAME" x="39.133525" y="10.18895625" size="1.016" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="JOG1" library="mb_supply" package="SQUARE" value="GND(T)" x="58.691525" y="26.31795625" smashed="yes">
-<attribute name="NAME" x="57.167525" y="24.41295625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JOT1" library="mb_supply" package="SQUARE" value="" x="58.691525" y="28.85795625" smashed="yes">
-<attribute name="NAME" x="57.167525" y="27.84195625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIN1" library="mb_supply" package="SQUARE" value="" x="37.736525" y="28.85795625" smashed="yes">
-<attribute name="NAME" x="40.022525" y="27.71495625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIG1" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="26.31795625" smashed="yes">
-<attribute name="NAME" x="40.022525" y="25.04795625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="+9V" library="mb_supply" package="SQUARE" value="+9V(T)" x="9.796525" y="12.34795625" smashed="yes"/>
+<element name="D1" library="mb_diodes" package="DO41-3" value="1N4001" x="9.796525" y="19.33295625" smashed="yes" rot="R90"/>
+<element name="G1" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="9.80795625" smashed="yes"/>
+<element name="JOG1" library="mb_supply" package="SQUARE" value="GND(T)" x="58.691525" y="26.31795625" smashed="yes"/>
+<element name="JOT1" library="mb_supply" package="SQUARE" value="" x="58.691525" y="28.85795625" smashed="yes"/>
+<element name="JIN1" library="mb_supply" package="SQUARE" value="" x="37.736525" y="28.85795625" smashed="yes"/>
+<element name="JIG1" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="26.31795625" smashed="yes"/>
 <element name="SW1" library="mb_switches" package="3PDT" value="3PDT" x="48.404525" y="16.66595625" smashed="yes"/>
 <element name="U$2" library="xc_library" package="BOARDLINK" value="BOARDLINK" x="45.610525" y="27.46095625" smashed="yes"/>
-<element name="+9V1" library="mb_supply" package="SQUARE" value="+9V(T)" x="37.736525" y="12.34795625" smashed="yes">
-<attribute name="NAME" x="40.149525" y="11.58595625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="D2" library="mb_diodes" package="DO41-3" value="1N4001" x="37.736525" y="19.33295625" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.371525" y="18.24075625" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="G2" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="9.80795625" smashed="yes">
-<attribute name="NAME" x="67.073525" y="10.18895625" size="1.016" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="JOG2" library="mb_supply" package="SQUARE" value="GND(T)" x="86.631525" y="26.31795625" smashed="yes">
-<attribute name="NAME" x="85.107525" y="24.41295625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JOT2" library="mb_supply" package="SQUARE" value="" x="86.631525" y="28.85795625" smashed="yes">
-<attribute name="NAME" x="85.107525" y="27.84195625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIN2" library="mb_supply" package="SQUARE" value="" x="65.676525" y="28.85795625" smashed="yes">
-<attribute name="NAME" x="67.962525" y="27.71495625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIG2" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="26.31795625" smashed="yes">
-<attribute name="NAME" x="67.962525" y="25.04795625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="+9V1" library="mb_supply" package="SQUARE" value="+9V(T)" x="37.736525" y="12.34795625" smashed="yes"/>
+<element name="D2" library="mb_diodes" package="DO41-3" value="1N4001" x="37.736525" y="19.33295625" smashed="yes" rot="R90"/>
+<element name="G2" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="9.80795625" smashed="yes"/>
+<element name="JOG2" library="mb_supply" package="SQUARE" value="GND(T)" x="86.631525" y="26.31795625" smashed="yes"/>
+<element name="JOT2" library="mb_supply" package="SQUARE" value="" x="86.631525" y="28.85795625" smashed="yes"/>
+<element name="JIN2" library="mb_supply" package="SQUARE" value="" x="65.676525" y="28.85795625" smashed="yes"/>
+<element name="JIG2" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="26.31795625" smashed="yes"/>
 <element name="SW3" library="mb_switches" package="3PDT" value="3PDT" x="76.344525" y="16.66595625" smashed="yes"/>
 <element name="U$3" library="xc_library" package="BOARDLINK" value="BOARDLINK" x="73.550525" y="27.46095625" smashed="yes"/>
-<element name="+9V2" library="mb_supply" package="SQUARE" value="+9V(T)" x="65.676525" y="12.34795625" smashed="yes">
-<attribute name="NAME" x="68.089525" y="11.58595625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="D3" library="mb_diodes" package="DO41-3" value="1N4001" x="65.676525" y="19.33295625" smashed="yes" rot="R90">
-<attribute name="NAME" x="66.311525" y="18.24075625" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="G3" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="36.47795625" smashed="yes">
-<attribute name="NAME" x="11.193525" y="36.85895625" size="1.016" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="JOG3" library="mb_supply" package="SQUARE" value="GND(T)" x="30.751525" y="52.98795625" smashed="yes">
-<attribute name="NAME" x="29.227525" y="51.08295625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JOT3" library="mb_supply" package="SQUARE" value="" x="30.751525" y="55.52795625" smashed="yes">
-<attribute name="NAME" x="29.227525" y="54.51195625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIN3" library="mb_supply" package="SQUARE" value="" x="9.796525" y="55.52795625" smashed="yes">
-<attribute name="NAME" x="12.082525" y="54.38495625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIG3" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="52.98795625" smashed="yes">
-<attribute name="NAME" x="12.082525" y="51.71795625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="+9V2" library="mb_supply" package="SQUARE" value="+9V(T)" x="65.676525" y="12.34795625" smashed="yes"/>
+<element name="D3" library="mb_diodes" package="DO41-3" value="1N4001" x="65.676525" y="19.33295625" smashed="yes" rot="R90"/>
+<element name="G3" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="36.47795625" smashed="yes"/>
+<element name="JOG3" library="mb_supply" package="SQUARE" value="GND(T)" x="30.751525" y="52.98795625" smashed="yes"/>
+<element name="JOT3" library="mb_supply" package="SQUARE" value="" x="30.751525" y="55.52795625" smashed="yes"/>
+<element name="JIN3" library="mb_supply" package="SQUARE" value="" x="9.796525" y="55.52795625" smashed="yes"/>
+<element name="JIG3" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="52.98795625" smashed="yes"/>
 <element name="SW4" library="mb_switches" package="3PDT" value="3PDT" x="20.464525" y="43.33595625" smashed="yes"/>
 <element name="U$4" library="xc_library" package="BOARDLINK" value="BOARDLINK" x="17.670525" y="54.13095625" smashed="yes"/>
-<element name="+9V3" library="mb_supply" package="SQUARE" value="+9V(T)" x="9.796525" y="39.01795625" smashed="yes">
-<attribute name="NAME" x="12.209525" y="38.25595625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="D4" library="mb_diodes" package="DO41-3" value="1N4001" x="9.796525" y="46.00295625" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.431525" y="44.91075625" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="G4" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="36.47795625" smashed="yes">
-<attribute name="NAME" x="39.133525" y="36.85895625" size="1.016" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="JOG4" library="mb_supply" package="SQUARE" value="GND(T)" x="58.691525" y="52.98795625" smashed="yes">
-<attribute name="NAME" x="57.167525" y="51.08295625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JOT4" library="mb_supply" package="SQUARE" value="" x="58.691525" y="55.52795625" smashed="yes">
-<attribute name="NAME" x="57.167525" y="54.51195625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIN4" library="mb_supply" package="SQUARE" value="" x="37.736525" y="55.52795625" smashed="yes">
-<attribute name="NAME" x="40.022525" y="54.38495625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIG4" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="52.98795625" smashed="yes">
-<attribute name="NAME" x="40.022525" y="51.71795625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="+9V3" library="mb_supply" package="SQUARE" value="+9V(T)" x="9.796525" y="39.01795625" smashed="yes"/>
+<element name="D4" library="mb_diodes" package="DO41-3" value="1N4001" x="9.796525" y="46.00295625" smashed="yes" rot="R90"/>
+<element name="G4" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="36.47795625" smashed="yes"/>
+<element name="JOG4" library="mb_supply" package="SQUARE" value="GND(T)" x="58.691525" y="52.98795625" smashed="yes"/>
+<element name="JOT4" library="mb_supply" package="SQUARE" value="" x="58.691525" y="55.52795625" smashed="yes"/>
+<element name="JIN4" library="mb_supply" package="SQUARE" value="" x="37.736525" y="55.52795625" smashed="yes"/>
+<element name="JIG4" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="52.98795625" smashed="yes"/>
 <element name="SW5" library="mb_switches" package="3PDT" value="3PDT" x="48.404525" y="43.33595625" smashed="yes"/>
 <element name="U$5" library="xc_library" package="BOARDLINK" value="BOARDLINK" x="45.610525" y="54.13095625" smashed="yes"/>
-<element name="+9V4" library="mb_supply" package="SQUARE" value="+9V(T)" x="37.736525" y="39.01795625" smashed="yes">
-<attribute name="NAME" x="40.149525" y="38.25595625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="D5" library="mb_diodes" package="DO41-3" value="1N4001" x="37.736525" y="46.00295625" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.371525" y="44.91075625" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="G5" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="36.47795625" smashed="yes">
-<attribute name="NAME" x="67.073525" y="36.85895625" size="1.016" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="JOG5" library="mb_supply" package="SQUARE" value="GND(T)" x="86.631525" y="52.98795625" smashed="yes">
-<attribute name="NAME" x="85.107525" y="51.08295625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JOT5" library="mb_supply" package="SQUARE" value="" x="86.631525" y="55.52795625" smashed="yes">
-<attribute name="NAME" x="85.107525" y="54.51195625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIN5" library="mb_supply" package="SQUARE" value="" x="65.676525" y="55.52795625" smashed="yes">
-<attribute name="NAME" x="67.962525" y="54.38495625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIG5" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="52.98795625" smashed="yes">
-<attribute name="NAME" x="67.962525" y="51.71795625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="+9V4" library="mb_supply" package="SQUARE" value="+9V(T)" x="37.736525" y="39.01795625" smashed="yes"/>
+<element name="D5" library="mb_diodes" package="DO41-3" value="1N4001" x="37.736525" y="46.00295625" smashed="yes" rot="R90"/>
+<element name="G5" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="36.47795625" smashed="yes"/>
+<element name="JOG5" library="mb_supply" package="SQUARE" value="GND(T)" x="86.631525" y="52.98795625" smashed="yes"/>
+<element name="JOT5" library="mb_supply" package="SQUARE" value="" x="86.631525" y="55.52795625" smashed="yes"/>
+<element name="JIN5" library="mb_supply" package="SQUARE" value="" x="65.676525" y="55.52795625" smashed="yes"/>
+<element name="JIG5" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="52.98795625" smashed="yes"/>
 <element name="SW6" library="mb_switches" package="3PDT" value="3PDT" x="76.344525" y="43.33595625" smashed="yes"/>
 <element name="U$6" library="xc_library" package="BOARDLINK" value="BOARDLINK" x="73.550525" y="54.13095625" smashed="yes"/>
-<element name="+9V5" library="mb_supply" package="SQUARE" value="+9V(T)" x="65.676525" y="39.01795625" smashed="yes">
-<attribute name="NAME" x="68.089525" y="38.25595625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="D6" library="mb_diodes" package="DO41-3" value="1N4001" x="65.676525" y="46.00295625" smashed="yes" rot="R90">
-<attribute name="NAME" x="66.311525" y="44.91075625" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="G6" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="63.14795625" smashed="yes">
-<attribute name="NAME" x="11.193525" y="63.52895625" size="1.016" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="JOG6" library="mb_supply" package="SQUARE" value="GND(T)" x="30.751525" y="79.65795625" smashed="yes">
-<attribute name="NAME" x="29.227525" y="77.75295625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JOT6" library="mb_supply" package="SQUARE" value="" x="30.751525" y="82.19795625" smashed="yes">
-<attribute name="NAME" x="29.227525" y="81.18195625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIN6" library="mb_supply" package="SQUARE" value="" x="9.796525" y="82.19795625" smashed="yes">
-<attribute name="NAME" x="12.082525" y="81.05495625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIG6" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="79.65795625" smashed="yes">
-<attribute name="NAME" x="12.082525" y="78.38795625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="+9V5" library="mb_supply" package="SQUARE" value="+9V(T)" x="65.676525" y="39.01795625" smashed="yes"/>
+<element name="D6" library="mb_diodes" package="DO41-3" value="1N4001" x="65.676525" y="46.00295625" smashed="yes" rot="R90"/>
+<element name="G6" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="63.14795625" smashed="yes"/>
+<element name="JOG6" library="mb_supply" package="SQUARE" value="GND(T)" x="30.751525" y="79.65795625" smashed="yes"/>
+<element name="JOT6" library="mb_supply" package="SQUARE" value="" x="30.751525" y="82.19795625" smashed="yes"/>
+<element name="JIN6" library="mb_supply" package="SQUARE" value="" x="9.796525" y="82.19795625" smashed="yes"/>
+<element name="JIG6" library="mb_supply" package="SQUARE" value="GND(T)" x="9.796525" y="79.65795625" smashed="yes"/>
 <element name="SW7" library="mb_switches" package="3PDT" value="3PDT" x="20.464525" y="70.00595625" smashed="yes"/>
 <element name="U$7" library="xc_library" package="BOARDLINK" value="BOARDLINK" x="17.670525" y="80.80095625" smashed="yes"/>
-<element name="+9V6" library="mb_supply" package="SQUARE" value="+9V(T)" x="9.796525" y="65.68795625" smashed="yes">
-<attribute name="NAME" x="12.209525" y="64.92595625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="D7" library="mb_diodes" package="DO41-3" value="1N4001" x="9.796525" y="72.67295625" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.431525" y="71.58075625" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="G7" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="63.14795625" smashed="yes">
-<attribute name="NAME" x="39.133525" y="63.52895625" size="1.016" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="JOG7" library="mb_supply" package="SQUARE" value="GND(T)" x="58.691525" y="79.65795625" smashed="yes">
-<attribute name="NAME" x="57.167525" y="77.75295625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JOT7" library="mb_supply" package="SQUARE" value="" x="58.691525" y="82.19795625" smashed="yes">
-<attribute name="NAME" x="57.167525" y="81.18195625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIN7" library="mb_supply" package="SQUARE" value="" x="37.736525" y="82.19795625" smashed="yes">
-<attribute name="NAME" x="40.022525" y="81.05495625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIG7" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="79.65795625" smashed="yes">
-<attribute name="NAME" x="40.022525" y="78.38795625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="+9V6" library="mb_supply" package="SQUARE" value="+9V(T)" x="9.796525" y="65.68795625" smashed="yes"/>
+<element name="D7" library="mb_diodes" package="DO41-3" value="1N4001" x="9.796525" y="72.67295625" smashed="yes" rot="R90"/>
+<element name="G7" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="63.14795625" smashed="yes"/>
+<element name="JOG7" library="mb_supply" package="SQUARE" value="GND(T)" x="58.691525" y="79.65795625" smashed="yes"/>
+<element name="JOT7" library="mb_supply" package="SQUARE" value="" x="58.691525" y="82.19795625" smashed="yes"/>
+<element name="JIN7" library="mb_supply" package="SQUARE" value="" x="37.736525" y="82.19795625" smashed="yes"/>
+<element name="JIG7" library="mb_supply" package="SQUARE" value="GND(T)" x="37.736525" y="79.65795625" smashed="yes"/>
 <element name="SW8" library="mb_switches" package="3PDT" value="3PDT" x="48.404525" y="70.00595625" smashed="yes"/>
 <element name="U$8" library="xc_library" package="BOARDLINK" value="BOARDLINK" x="45.610525" y="80.80095625" smashed="yes"/>
-<element name="+9V7" library="mb_supply" package="SQUARE" value="+9V(T)" x="37.736525" y="65.68795625" smashed="yes">
-<attribute name="NAME" x="40.149525" y="64.92595625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="D8" library="mb_diodes" package="DO41-3" value="1N4001" x="37.736525" y="72.67295625" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.371525" y="71.58075625" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="G8" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="63.14795625" smashed="yes">
-<attribute name="NAME" x="67.073525" y="63.52895625" size="1.016" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="JOG8" library="mb_supply" package="SQUARE" value="GND(T)" x="86.631525" y="79.65795625" smashed="yes">
-<attribute name="NAME" x="85.107525" y="77.75295625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JOT8" library="mb_supply" package="SQUARE" value="" x="86.631525" y="82.19795625" smashed="yes">
-<attribute name="NAME" x="85.107525" y="81.18195625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIN8" library="mb_supply" package="SQUARE" value="" x="65.676525" y="82.19795625" smashed="yes">
-<attribute name="NAME" x="67.962525" y="81.05495625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="JIG8" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="79.65795625" smashed="yes">
-<attribute name="NAME" x="67.962525" y="78.38795625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="+9V7" library="mb_supply" package="SQUARE" value="+9V(T)" x="37.736525" y="65.68795625" smashed="yes"/>
+<element name="D8" library="mb_diodes" package="DO41-3" value="1N4001" x="37.736525" y="72.67295625" smashed="yes" rot="R90"/>
+<element name="G8" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="63.14795625" smashed="yes"/>
+<element name="JOG8" library="mb_supply" package="SQUARE" value="GND(T)" x="86.631525" y="79.65795625" smashed="yes"/>
+<element name="JOT8" library="mb_supply" package="SQUARE" value="" x="86.631525" y="82.19795625" smashed="yes"/>
+<element name="JIN8" library="mb_supply" package="SQUARE" value="" x="65.676525" y="82.19795625" smashed="yes"/>
+<element name="JIG8" library="mb_supply" package="SQUARE" value="GND(T)" x="65.676525" y="79.65795625" smashed="yes"/>
 <element name="SW9" library="mb_switches" package="3PDT" value="3PDT" x="76.344525" y="70.00595625" smashed="yes"/>
 <element name="U$9" library="xc_library" package="BOARDLINK" value="BOARDLINK" x="73.550525" y="80.80095625" smashed="yes"/>
-<element name="+9V8" library="mb_supply" package="SQUARE" value="+9V(T)" x="65.676525" y="65.68795625" smashed="yes">
-<attribute name="NAME" x="68.089525" y="64.92595625" size="1.016" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="D9" library="mb_diodes" package="DO41-3" value="1N4001" x="65.676525" y="72.67295625" smashed="yes" rot="R90">
-<attribute name="NAME" x="66.311525" y="71.58075625" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="+9V8" library="mb_supply" package="SQUARE" value="+9V(T)" x="65.676525" y="65.68795625" smashed="yes"/>
+<element name="D9" library="mb_diodes" package="DO41-3" value="1N4001" x="65.676525" y="72.67295625" smashed="yes" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">

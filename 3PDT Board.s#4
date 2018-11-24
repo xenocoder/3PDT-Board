@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -408,7 +408,7 @@
 <parts>
 <part name="G" library="mb_supply" deviceset="GND(T)" device=""/>
 <part name="JOG" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="JOUT" library="mb_supply" deviceset="PAD" device=""/>
+<part name="JOT" library="mb_supply" deviceset="PAD" device=""/>
 <part name="JIN" library="mb_supply" deviceset="PAD" device=""/>
 <part name="JIG" library="mb_supply" deviceset="GND(T)" device=""/>
 <part name="SW2" library="mb_switches" deviceset="3PDT" device=""/>
@@ -420,16 +420,37 @@
 <plain>
 </plain>
 <instances>
-<instance part="G" gate="GND" x="25.4" y="12.7"/>
-<instance part="JOG" gate="GND" x="20.32" y="15.24"/>
-<instance part="JOUT" gate="G$1" x="38.1" y="12.7" rot="R270"/>
-<instance part="JIN" gate="G$1" x="15.24" y="38.1" rot="R90"/>
-<instance part="JIG" gate="GND" x="35.56" y="38.1"/>
-<instance part="SW2" gate="A" x="12.7" y="27.94"/>
-<instance part="SW2" gate="B" x="25.4" y="27.94"/>
-<instance part="SW2" gate="C" x="38.1" y="20.32"/>
-<instance part="U$1" gate="G$1" x="27.94" y="45.72"/>
-<instance part="+9V" gate="+9V" x="33.02" y="33.02" rot="R180"/>
+<instance part="G" gate="GND" x="25.4" y="12.7" smashed="yes">
+<attribute name="VALUE" x="23.495" y="9.525" size="1.778" layer="96"/>
+</instance>
+<instance part="JOG" gate="GND" x="20.32" y="15.24" smashed="yes">
+<attribute name="VALUE" x="18.415" y="12.065" size="1.778" layer="96"/>
+</instance>
+<instance part="JOT" gate="G$1" x="38.1" y="12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="40.64" y="12.7" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="JIN" gate="G$1" x="15.24" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="12.7" y="38.1" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="JIG" gate="GND" x="35.56" y="38.1" smashed="yes">
+<attribute name="VALUE" x="37.973" y="36.703" size="1.778" layer="96"/>
+</instance>
+<instance part="SW2" gate="A" x="12.7" y="27.94" smashed="yes">
+<attribute name="NAME" x="8.255" y="20.193" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="SW2" gate="B" x="25.4" y="27.94" smashed="yes">
+<attribute name="NAME" x="20.955" y="20.193" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="SW2" gate="C" x="38.1" y="20.32" smashed="yes">
+<attribute name="NAME" x="33.655" y="12.573" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="U$1" gate="G$1" x="27.94" y="45.72" smashed="yes">
+<attribute name="NAME" x="26.924" y="53.34" size="1.778" layer="95"/>
+<attribute name="VALUE" x="39.878" y="47.752" size="1.778" layer="96"/>
+</instance>
+<instance part="+9V" gate="+9V" x="45.72" y="30.48" smashed="yes" rot="R270">
+<attribute name="VALUE" x="48.895" y="32.385" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -452,7 +473,7 @@
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="JOUT" gate="G$1" pin="PAD"/>
+<pinref part="JOT" gate="G$1" pin="PAD"/>
 <pinref part="SW2" gate="C" pin="2"/>
 </segment>
 </net>
@@ -507,6 +528,18 @@
 <wire x1="53.34" y1="40.64" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SW2" gate="C" pin="3"/>
 <wire x1="53.34" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+9V" class="0">
+<segment>
+<pinref part="+9V" gate="+9V" pin="+9V"/>
+<wire x1="43.18" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="+9V"/>
+<wire x1="33.02" y1="30.48" x2="33.02" y2="41.656" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
